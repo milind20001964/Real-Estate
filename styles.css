@@ -1,0 +1,164 @@
+:root {
+    --color-light-gray-bg: #f8f9fa;
+    --color-text-dark: #333;
+    --color-navbar-border: #e7e7e7;
+    --color-primary-blue: #007bff;
+    --color-primary-blue-hover: #0056b3;
+    --color-muted-text: #6c757d;
+    --color-success-green: #28a745;
+    --color-icon-text: #555;
+    --color-form-label: #495057;
+    --color-form-border: #ced4da;
+    --color-dark-bg: #343a40;
+    --shadow-light: rgba(0,0,0,.05);
+    --shadow-medium: rgba(0,0,0,.1);
+    --shadow-strong: rgba(0,0,0,.15);
+}
+
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--color-light-gray-bg); /* Light gray background */
+    color: var(--color-text-dark);
+    line-height: 1.6; /* Improved readability */
+}
+
+/* Navbar Customization */
+.navbar {
+    border-bottom: 1px solid var(--color-navbar-border);
+    box-shadow: 0 2px 4px var(--shadow-light);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: var(--color-primary-blue) !important; /* Primary blue */
+    font-size: 1.5rem; /* Slightly larger for prominence */
+}
+
+/* Main Container */
+.container {
+    padding-top: 30px; /* Increased padding */
+    padding-bottom: 30px; /* Increased padding */
+}
+
+/* Card Styles for Listings and Filters */
+.card {
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px var(--shadow-medium);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px var(--shadow-strong); /* More pronounced shadow on hover */
+}
+
+.card-title {
+    color: var(--color-primary-blue);
+    font-size: 1.35rem; /* Slightly larger */
+    margin-bottom: 0.8rem;
+}
+
+.card-text {
+    color: var(--color-muted-text); /* Muted text */
+    font-size: 0.95rem;
+}
+
+.card-subtitle {
+    color: var(--color-success-green); /* Success green for prices */
+    font-size: 1.6rem; /* Slightly larger */
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+}
+
+/* Property Details Icons */
+.property-detail-item {
+    display: flex;
+    align-items: center;
+    color: var(--color-icon-text);
+    font-size: 0.9rem;
+}
+
+.d-flex span i {
+    margin-right: 8px; /* Increased spacing */
+    color: var(--color-primary-blue); /* Icon color */
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--color-primary-blue);
+    border-color: var(--color-primary-blue);
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+    padding: 0.6rem 1.2rem; /* Consistent button padding */
+    font-size: 1rem;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-blue-hover);
+    border-color: var(--color-primary-blue-hover);
+    transform: translateY(-1px); /* Slight lift on hover */
+}
+
+/* Form Elements in Filters */
+.form-label {
+    font-weight: bold;
+    color: var(--color-form-label);
+    margin-bottom: 0.5rem;
+}
+
+.form-control, .form-select {
+    border-radius: 0.3rem; /* Slightly more rounded */
+    border: 1px solid var(--color-form-border);
+    padding: 0.6rem 0.75rem; /* Consistent padding */
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--color-dark-bg) !important; /* Dark background */
+    color: var(--color-light-gray-bg); /* Light text */
+    padding: 25px 0; /* Increased padding */
+    margin-top: 40px; /* Increased margin */
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) { /* For tablets and smaller devices */
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .col-lg-3 { /* Filter section */
+        margin-bottom: 20px; /* Add space below filters when stacked */
+    }
+}
+
+@media (max-width: 767.98px) { /* For mobile devices */
+    .navbar-brand {
+        font-size: 1.3rem;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    .card-subtitle {
+        font-size: 1.4rem;
+    }
+
+    .d-flex span {
+        font-size: 0.85rem;
+    }
+
+    .btn-primary {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}

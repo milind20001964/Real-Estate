@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Beautiful 3 bedroom modern family home with updated interiors and a spacious backyard. Contact RealHome to schedule a viewing." />
+    <title>Property Details – RealHome</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index-bootstrap.html">
+                <i class="bi bi-house-heart-fill"></i> RealHome
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index-bootstrap.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Properties</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="container mt-5 pt-4">
+        <div class="row g-4">
+
+            <!-- LEFT SECTION -->
+            <div class="col-lg-8">
+
+                <!-- Title + Price -->
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h1 class="h2 mb-0 fw-bold">Modern Family Home</h1>
+                    <span class="fs-3 fw-bold text-primary">$350,000</span>
+                </div>
+
+                <!-- Carousel -->
+                <div id="propertyCarousel" class="carousel slide rounded shadow-sm overflow-hidden mb-4">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../static website/image assets/296-400x300.jpg" class="d-block w-100" alt="Living room view">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../static website/image assets/663-400x300.jpg" class="d-block w-100" alt="Modern kitchen">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../static website/image assets/870-400x300.jpg" class="d-block w-100" alt="Spacious bedroom">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../static website/image assets/174-400x300.jpg" class="d-block w-100" alt="Backyard view">
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#propertyCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#propertyCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <!-- Property Specs -->
+                <section class="card mb-4">
+                    <div class="card-header bg-light">
+                        <h5 class="card-title mb-0">Property Details</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row text-center">
+                            <div class="col-md-4">
+                                <i class="bi bi-door-open fs-2 text-primary"></i>
+                                <p class="lead">3 Beds</p>
+                            </div>
+                            <div class="col-md-4">
+                                <i class="bi bi-droplet fs-2 text-primary"></i>
+                                <p class="lead">2 Baths</p>
+                            </div>
+                            <div class="col-md-4">
+                                <i class="bi bi-fullscreen fs-2 text-primary"></i>
+                                <p class="lead">1800 sqft</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Description -->
+                <section class="card">
+                    <div class="card-header bg-light">
+                        <h5 class="card-title mb-0">Description</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            This beautiful 3-bedroom home is located in a quiet, family-friendly neighborhood.
+                            It includes a spacious living room, modern kitchen with stainless appliances, and a large backyard perfect for gatherings.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod nisl nec tincidunt aliquam.
+                            Donec aliquet efficitur nisl, sed faucibus neque gravida sit amet.
+                        </p>
+                    </div>
+                </section>
+            </div>
+
+            <!-- RIGHT SIDEBAR -->
+            <aside class="col-lg-4">
+                <div class="card sticky-top shadow-sm" style="top: 90px;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center mb-4">Contact Agent</h5>
+
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+                                    <input type="text" id="name" class="form-control" placeholder="John Doe" required />
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+                                    <input type="email" id="email" class="form-control" placeholder="name@example.com" required />
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="bi bi-telephone-fill"></i></span>
+                                    <input type="tel" id="phone" class="form-control" placeholder="+1 234 567 890" />
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" class="form-control" rows="4" placeholder="I’m interested in this property..."></textarea>
+                            </div>
+
+                            <button class="btn btn-primary w-100 btn-lg" type="submit">
+                                <i class="bi bi-send-fill"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center p-4 mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p>RealHome helps you find your dream home with a wide range of property listings tailored for your needs.</p>
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index-bootstrap.html" class="text-white">Home</a></li>
+                        <li><a href="#" class="text-white">Properties</a></li>
+                        <li><a href="#" class="text-white">About</a></li>
+                        <li><a href="#" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <div>
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-linkedin fs-4"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-light" />
+            <p class="mb-0">&copy; 2025 RealHome. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

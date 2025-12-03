@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Install All",
+      "type": "shell",
+      "command": "npm run install:all",
+      "group": "none",
+      "problemMatcher": [],
+      "detail": "Runs all installation scripts for the project."
+    },
+    {
+      "label": "Run Dev (server + client)",
+      "type": "shell",
+      "command": "npm run dev",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "isBackground": true,
+      "problemMatcher": [],
+      "detail": "Runs both server and client in development mode."
+    }
+  ]
+}

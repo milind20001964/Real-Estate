@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Country Cottage — RealEstate</title>
+  <link rel="stylesheet" href="./src/styles.css">
+  <style>
+    body{background:var(--bg)}
+    .hero{display:flex;gap:20px;align-items:flex-start}
+    .hero .gallery{flex:1}
+    .hero .meta{width:320px}
+    .gallery img{width:100%;border-radius:10px;margin-bottom:10px}
+    .contact-box{padding:12px;border-radius:10px;background:white}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div style="margin:18px 0"><a class="back" href="./listing.html">← Back to listings</a></div>
+    <div class="hero">
+      <div class="gallery">
+        <img src="https://picsum.photos/seed/cottage1a/1200/800" alt="Country Cottage">
+        <img src="https://picsum.photos/seed/cottage1b/1200/800" alt="Country Cottage">
+      </div>
+      <div class="meta">
+        <h1>Country Cottage</h1>
+        <p class="muted">7 Oak Lane, Pleasantville</p>
+        <p class="price-large">$2,75,000</p>
+        <div class="contact-box">
+          <p><strong>Contact Agent</strong></p>
+          <p><a class="btn" href="mailto:info@example.com?subject=Inquiry%20about%20Country%20Cottage">Email</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="desc">
+      <h2>About this property</h2>
+      <p>Cozy cottage with country views and a quiet neighborhood.</p>
+      <div class="specs" style="margin-top:12px">
+        <div><strong>Bedrooms</strong><div>3</div></div>
+        <div><strong>Bathrooms</strong><div>2</div></div>
+        <div><strong>Area</strong><div>1300 sqft</div></div>
+      </div>
+      <p><strong>Features:</strong> Porch, Wood floors, Garden</p>
+    </div>
+  </div>
+</body>
+</html>
